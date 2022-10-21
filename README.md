@@ -27,6 +27,10 @@ The thing that caused this lag was the "for" loop at the beginning that spanned 
 The refactored code had the "for" loops seperated and not nested. Here is what that looked like:
 ![refactor](https://user-images.githubusercontent.com/114030563/197283799-07fdbc49-b7e6-4d79-995e-4b0bbe55421d.png)
 
+### The Cause in Lag
+
+The reason why this nesting of "for" loops caused it is because it was running the code multiple times over instead of looping what it needed to loop. This also could cause runtime errors.
+
 
 
 ## The Conclusion
